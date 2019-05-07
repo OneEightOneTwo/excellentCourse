@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="stylesheets/base.css">
+    <link rel="stylesheet" href="stylesheets/public.css">
+    <script src="javascripts/jquery-1.10.1.min.js"></script>
+    <script src="javascripts/common.js"></script>
+    <script src="javascripts/public.js"></script>
+</head>
+
+<body>
+    <!-- 头部 -->
+    <header>
+        <div class="header con">
+            <a class="logo" href="index.html">
+                <img src="images/logo.png" alt="">
+            </a>
+            <div class="className">
+                <img src="images/gaodai2.png" alt="">
+            </div>
+            <div class="LogOrReg">
+                <p>
+                    欢迎你，
+                    <span id="loginUser"></span>
+                    <span id="exit">退出</span>
+                </p>
+                <a class="toLog" href="login.html">
+                    登录
+                </a>
+                <a class="toReg" href="register.html">
+                    免费注册
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <div class="banner con">
+        <img src="images/titlebackground.jpg" alt="">
+    </div>
+    <!-- 导航菜单 -->
+    <div id="menu" class="con">
+        <ul class="menu">
+            <li>
+                <a href="/">首页</a>
+            </li>
+            <li>
+                <a href="construct.html">课程建设</a>
+                <ul>
+                    <li>
+                        <a href="construct.html">教学成果</a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a href="team.html">教学团队</a>
+                <ul>
+                    <li>
+                        <a href="team.html">教师简介</a>
+                    </li>
+                </ul>
+            </li>
+            <li class="menu-active">
+                <a href="introduce.html?develop">课程介绍</a>
+                <ul>
+                    <li>
+                        <a href="introduce.html?develop">学科发展前沿</a>
+                    </li>
+                    <li>
+                        <a href="introduce.html?intro">课程简介</a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a href="outline.html">教学大纲</a>
+            </li>
+            <li>
+                <a href="#">课程资源</a>
+                <ul>
+                    <li>
+                        <a href="#">教学资料</a>
+                    </li>
+                    <li>
+                        <a href="#">教学视频</a>
+                    </li>
+                    <li>
+                        <a href="#">学习交流</a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">关联课程</a>
+                <ul>
+                    <li>
+                        <a href="#">数值分析</a>
+                    </li>
+                    <li>
+                        <a href="#">高等代数与解析几何</a>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+
+    <!-- 位置导航 -->
+    <div id="path" class="con">
+        <span style="text-indent: 2em;">位置： </span>
+        <a href="#">首页</a>
+        <span>>教学大纲</span>
+    </div>
+    <!-- 主体区 -->
+    <div id="mainBody" class="con">
+        <div class="bodyLeft">
+            <h2>教学大纲</h2>
+            <div class="choseCard">
+                <ul>
+                    <!-- <li class="choseActive" data-page="0"></li> -->
+                </ul>
+            </div>
+        </div>
+        <div class="bodyRight">
+            <h2>《高等代数与解析几何》课程教学大纲</h2>
+            <div class="bodyCon">
+                <h3></h3>
+                <p>
+                    教学大纲内容哈哈哈哈，也泛指在某方面值得学习和能够给大家带来一定正确知识和指导，有能力的人。
+                </p>
+            </div>
+            
+        </div>
+    </div>
+
+    <!-- 底部 -->
+    <footer>
+        <div class="footer con">
+            <ul>
+                <li>
+                    <a href="/">首页</a>
+                </li>
+                <li>
+                    <a href="#">学习交流</a>
+                </li>
+                <li>
+                    <a href="#">视频录像</a>
+                </li>
+            </ul>
+            <p>广东海洋大学 数学与计算机学院 CopyRight© Mathematics and computer College Guangdong Ocean University 2019</p>
+        </div>
+
+    </footer>
+    <script>
+        $(() => {
+            let pageCon = location.search.slice(1);
+            if (pageCon == 'intro') {
+                //排他
+                // console.log($('.choseCard>ul>li'));
+                $('.choseCard>ul>li').eq(0).removeClass('choseActive');
+                $('.bodyCon').css('display', 'none');
+                //选项卡高亮
+                $('.choseCard>ul>li').eq(1).addClass('choseActive');
+                //选项卡内容改变
+                $('.bodyCon').eq(1).css('display', 'block');
+                //选项卡标题改变
+                $('.bodyRight>h2').html($('.choseCard>ul>li').eq(1).html());
+
+            }
+        })
+    </script>
+</body>
+
+</html>

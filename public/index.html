@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="stylesheets/base.css">
+    <link rel="stylesheet" href="stylesheets/index.css">
+    <link rel="stylesheet" href="font_1/iconfont.css">
+    <link rel="stylesheet" href="stylesheets/swiper.min.css">
+    <script src="javascripts/jquery-1.10.1.min.js"></script>
+    <script src="javascripts/swiper.min.js"></script>
+    <script src="javascripts/common.js"></script>
+    <script src="javascripts/index.js"></script>
+    <script src="javascripts/public.js"></script>
+</head>
+
+<body>
+    <header>
+        <div class="header con">
+            <a class="logo" href="index.html">
+                <img src="images/logo.png" alt="">
+            </a>
+            <div class="className">
+                <img src="images/gaodai2.png" alt="">
+            </div>
+            <div class="LogOrReg">
+                <p>
+                    欢迎你，
+                    <span id="loginUser"></span>
+                    <span id="exit">退出</span>
+                </p>
+                <a class="toLog" href="login.html">
+                    登录
+                </a>
+                <a class="toReg" href="register.html">
+                    免费注册
+                </a>
+            </div>
+        </div>
+
+    </header>
+
+    <div class="banner con">
+        <img src="images/titlebackground.jpg" alt="">
+    </div>
+    <!-- 导航菜单 -->
+    <div id="menu" class="con">
+        <ul class="menu">
+            <li class="menu-active">
+                <a href="/">首页</a>
+            </li>
+            <li>
+                <a href="construct.html">课程建设</a>
+                <ul>
+                    <li>
+                        <a href="construct.html">教学成果</a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a href="team.html">教学团队</a>
+                <ul>
+                    <li>
+                        <a href="team.html">教师简介</a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a href="introduce.html?develop">课程介绍</a>
+                <ul>
+                    <li>
+                        <a href="introduce.html?develop">学科发展前沿</a>
+                    </li>
+                    <li>
+                        <a href="introduce.html?intro">课程简介</a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a href="outline.html">教学大纲</a>
+            </li>
+            <li>
+                <a href="#">课程资源</a>
+                <ul>
+                    <li>
+                        <a href="#">教学资料</a>
+                    </li>
+                    <li>
+                        <a href="#">教学视频</a>
+                    </li>
+                    <li>
+                        <a href="#">学习交流</a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">关联课程</a>
+                <ul>
+                    <li>
+                        <a href="#">数值分析</a>
+                    </li>
+                    <li>
+                        <a href="#">高等代数与解析几何</a>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+    <!-- 主体区 -->
+    <div id="mainBody" class="con">
+        <!-- 左侧内容 -->
+        <div class="bodyLeft">
+            <!-- 教师简介 -->
+            <div class="teacherShow">
+                <h3>教师简介</h3>
+                <div>
+                    <img src="images/teacherphoto.jpg" alt="">
+                    <p>
+                        哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈或或或或或或或或哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈或或或或或或或或或或或或或或或或或或或或或或或或或或或或或或或哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈
+                        Biubiubiubiubiu客服；慕课网弗兰克吗打开隆科多代数代码发了肯定是、代收款没了看电视了年鲁大师你
+                    </p>
+                </div>
+            </div>
+            <!-- 学习交流 -->
+            <div class="studyCommunication">
+                <h3>学习交流</h3>
+                <div class="messageBox">
+                    <ul id="messageBox">
+                        <li>渲染的内容1渲染的内容1渲染的内容1</li>
+                        <li>渲染的内容2渲染的内容1渲染的内容1</li>
+                        <li>渲染的内容3渲染的内容1渲染的内容1</li>
+                        <li>渲染的内容4渲染的内容1渲染的内容1</li>
+                    </ul>
+                </div>
+                <a href="#" class="mbMore">查看更多>></a>
+            </div>
+            <!-- 管理员登录 -->
+            <div class="adminLogin">
+                <h3>管理员登录</h3>
+                <form action="#">
+                    <div>
+                        <span class="iconfont icon-yonghu"></span>
+                        <input type="text" id="username" placeholder="账号">
+                    </div>
+                    <div>
+                        <span class="iconfont icon-pass"></span>
+                        <input type="text" id="userpass" placeholder="密码">
+                    </div>
+                    <button id="loginBtn">登录</button>
+                    <a href="register.html" id="register">注册>></a>
+                </form>
+            </div>
+        </div>
+
+        <!-- 右侧展示 -->
+        <div class="bodyRight">
+            <!-- 课程介绍 -->
+            <div class="classshow">
+                <h3>课程介绍</h3>
+                <div>
+                    <img src="images/classshow.jpg" alt="">
+                    <p>高等代数和空间解析几何是大学数学的两大专业基础课程.前者的基本内容是多项式理论、矩阵理论、向量空间和线性变换理论； 后者的基本内容是向量代数、空间直线和平面、常见曲面、坐标变换、二次曲线方程的化简等.多年来，我国大部分高校的数学专业，都是将这两门课分开教学.高等代数是研究线性空间及其上的线性变换的学科,
+                        课程中大量的公式、定理、推论都是采用严格的演绎论证方法, 抽象程度高, 逻辑性强.学生在学习知识时很难深刻理解其中的抽象概念和复杂结论, 学习效率不高.利用几何直观方法, 把抽象的问题形象化,
+                        结合直观的形象对抽象内容加以理解, 可以帮助学生理解概念, 发现研究思路, 有效开展推理、猜想, 直至问题解决.因此, 在教学中运用几何直观与演绎论证相结合的方法, 不仅是学生学好高等代数的需要,
+                        而且对培养学生分析问题的能力和养成科学的思维品质都具有十分重要的意义.事实上,高等代数为解析几何提供研究方法，而解析几何为高等代数提供直观背景.近年来，一般大学数学课程中的高等代数和空间解析几何课程的课时减少了许多，而对数学内容的要求却没有多大变化.因此，给这两门课的教学造成了一定的困难.另外，从纯数学的观点来看，高等代数与空间解析几何,
+                        这两门课有许多重叠的地方, 因此，将这两门课整合成一门课是必要的.</p>
+                </div>
+            </div>
+            <!-- 教学资源 -->
+            <div class="teachResource">
+                <h3>教学资源</h3>
+                <div>
+                    <ul>
+                        <li>
+                            <a href="#">教学课件1：啦啦啦啦啦啦啦啦啦啦lallalallalalalal啦啦啦</a>
+                            <span>2019-4-29</span>
+                        </li>
+                        <li>
+                            <a href="#">教学课件2：哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈</a>
+                            <span>2019-4-29</span>
+                        </li>
+                        <li>
+                            <a href="#">教学课件3：咩咩咩咩咩咩咩咩咩咩咩咩咩咩咩咩咩咩咩咩咩咩</a>
+                            <span>2019-4-29</span>
+                        </li>
+                        <li>
+                            <a href="#">教学课件4：咯咯咯咯咯咯咯咯咯咯咯咯咯咯咯咯咯咯咯咯咯咯咯咯咯咯咯</a>
+                            <span>2019-4-29</span>
+                        </li>
+                    </ul>
+                    <img src="images/teachresoure.jpg" alt="">
+                </div>
+            </div>
+            <!-- 课程风采 -->
+            <div class="classAlbum">
+                <h3>课程风采</h3>
+                <div id="classAlbum">
+                    <!-- Swiper -->
+                    <div class="swiper-container">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <img src="images/8.jpg" alt="">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="images/9.jpg" alt="">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="images/10.jpg" alt="">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="images/14.jpg" alt="">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="images/teacherphoto.jpg" alt="">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="images/8.jpg" alt="">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="images/9.jpg" alt="">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="images/10.jpg" alt="">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="images/14.jpg" alt="">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="images/teacherphoto.jpg" alt="">
+                            </div>
+                        </div>
+                        <!-- Add Pagination -->
+                        <div class="swiper-pagination"></div>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer con">
+            <ul>
+                <li>
+                    <a href="/">首页</a>
+                </li>
+                <li>
+                    <a href="#">学习交流</a>
+                </li>
+                <li>
+                    <a href="#">视频录像</a>
+                </li>
+            </ul>
+            <p>广东海洋大学 数学与计算机学院 CopyRight© Mathematics and computer College Guangdong Ocean University 2019</p>
+        </div>
+
+    </footer>
+</body>
+
+</html>

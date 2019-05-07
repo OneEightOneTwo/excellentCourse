@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="stylesheets/base.css">
+    <link rel="stylesheet" href="stylesheets/public.css">
+    <link rel="stylesheet" href="stylesheets/register.css">
+    <script src="javascripts/jquery-1.10.1.min.js"></script>
+    <script src="javascripts/common.js"></script>
+</head>
+
+<body>
+    <!-- 头部 -->
+    <header>
+        <div class="header con">
+            <a class="logo" href="index.html">
+                <img src="images/logo.png" alt="">
+            </a>
+            <div class="className">
+                <img src="images/gaodai2.png" alt="">
+            </div>
+            <div class="LogOrReg">
+                <p>
+                    欢迎你，
+                    <span id="loginUser"></span>
+                    <span id="exit">退出</span>
+                </p>
+                <a class="toLog" href="login.html">
+                    登录
+                </a>
+                <a class="toReg" href="register.html">
+                    免费注册
+                </a>
+            </div>
+        </div>
+    </header>
+    <!-- 导航菜单 -->
+    <div id="menu" class="con">
+        <ul class="menu">
+            <li>
+                <a href="/">首页</a>
+            </li>
+            <li>
+                <a href="construct.html">课程建设</a>
+                <ul>
+                    <li>
+                        <a href="construct.html">教学成果</a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a href="team.html">教学团队</a>
+                <ul>
+                    <li>
+                        <a href="team.html">教师简介</a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a href="introduce.html?develop">课程介绍</a>
+                <ul>
+                    <li>
+                        <a href="introduce.html?develop">学科发展前沿</a>
+                    </li>
+                    <li>
+                        <a href="introduce.html?intro">课程简介</a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">教学大纲</a>
+            </li>
+            <li>
+                <a href="#">课程资源</a>
+                <ul>
+                    <li>
+                        <a href="#">教学资料</a>
+                    </li>
+                    <li>
+                        <a href="#">教学视频</a>
+                    </li>
+                    <li>
+                        <a href="#">学习交流</a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">关联课程</a>
+                <ul>
+                    <li>
+                        <a href="#">数值分析</a>
+                    </li>
+                    <li>
+                        <a href="#">高等代数与解析几何</a>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+
+    <!-- 位置导航 -->
+    <div id="path" class="con">
+        <span style="text-indent: 2em;">位置： </span>
+        <a href="#">首页</a>
+        <span>>注册</span>
+    </div>
+    <!-- 主体区 -->
+    <div id="normalMsg" class="con">
+        <h1>基本信息</h1>
+        <form id="reginf" action="" method="post">
+            <dl>
+                <dt>用户名：</dt>
+                <dd>
+                    <input type="text" name="regname" id="regname" value="" placeholder="请输入账号" />
+                </dd>
+            </dl>
+            <dl>
+                <dt>密码：</dt>
+                <dd>
+                    <input type="password" id="regpsw" placeholder="以字母开头不少于6位的密码">
+                </dd>
+            </dl>
+            <div class="yz_codebox">
+                <dl>
+                    <dt>验证码：</dt>
+                    <dd>
+                        <input type="text" name="yzCodeIn" id="yzCodeIn" value="" placeholder="输入验证码" />
+                    </dd>
+
+                </dl>
+                <span id="yzCodeOut">
+                    <a href="#">看不清楚，更换一张</a>
+                </span>
+            </div>
+
+            <input type="button" value="注册" id="regBtn" />
+        </form>
+    </div>
+
+    <!-- 底部 -->
+    <footer>
+        <div class="footer con">
+            <ul>
+                <li>
+                    <a href="#">首页</a>
+                </li>
+                <li>
+                    <a href="#">学习交流</a>
+                </li>
+                <li>
+                    <a href="#">视频录像</a>
+                </li>
+            </ul>
+            <p>广东海洋大学 数学与计算机学院 CopyRight© Mathematics and computer College Guangdong Ocean University 2019</p>
+        </div>
+
+    </footer>
+    <script src="javascripts/register.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,236 @@
+/* 头部 */
+header {
+    height: 80px;
+    padding: 5px;
+  }
+  header .header {
+    height: 80px;
+  }
+  header .header .logo {
+    display: block;
+    float: left;
+  }
+  header .header .logo img {
+    height: 80px;
+    width: 300px;
+  }
+  header .header .className {
+    display: block;
+    float: left;
+    padding-top: 16px;
+    height: 64px;
+  }
+  header .header .className img {
+    height: 64px;
+    width: 450px;
+  }
+  header .header .LogOrReg {
+    width: 200px;
+    float: left;
+    font-size: 14px;
+    padding-top: 56px;
+  }
+  header .header .LogOrReg a {
+    padding:5px 10px;
+    display: block;
+    float: left;
+    cursor: pointer;
+    color: #076CE0;
+  }
+  header .header .LogOrReg #exit {
+    color: #076CE0;
+    cursor: pointer;
+  }
+  .banner img {
+    height: 260px;
+    width: 1000px;
+  }
+  
+  #menu {
+    height: 50px;
+    background: #2097F3;
+  }
+  #menu .menu > li {
+    display: block;
+    float: left;
+    width: 120px;
+    height: 50px;
+    overflow: hidden;
+    border-right: 1px solid #2097F3;
+    position: relative;
+    z-index: 99;
+  }
+  #menu .menu > li a {
+    display: block;
+    padding: 0 10px;
+    width: 100px;
+    height: 50px;
+    line-height: 50px;
+    color: #fff;
+    font-size: 16px;
+    text-align: center;
+    cursor: pointer;
+  }
+  #menu .menu > li:hover {
+    background: #1F87E8;
+    overflow: visible;
+  }
+  #menu .menu > li > ul {
+    display: block;
+    position: absolute;
+    top: 50px;
+    left: 0;
+  }
+  #menu .menu > li > ul > li {
+    height: 50px;
+    background: #076CE0;
+    border-top: 1px solid #fff;
+  }
+  #menu .menu > li > ul > li a {
+    display: block;
+    padding: 0 10px;
+    width: 100px;
+    height: 50px;
+    line-height: 50px;
+    color: #fff;
+    font-size: 14px;
+    text-align: center;
+    cursor: pointer;
+  }
+  #menu .menu .menu-active {
+    background: #1F87E8;
+  }
+
+  /* 底部 */
+  footer {
+    height: 120px;
+  }
+  footer .footer {
+    height: 100px;
+    background: #2097F3;
+  }
+  footer .footer ul {
+    display: block;
+    padding: 20px;
+    height: 20px;
+    width: 200px;
+    margin: 0 auto;
+  }
+  footer .footer ul li {
+    float: left;
+  }
+  footer .footer ul li a {
+    color: #fff;
+    font-size: 12px;
+    height: 16px;
+    line-height: 16px;
+    padding: 2px 10px;
+  }
+  footer .footer p {
+    display: block;
+    color: #fff;
+    font-size: 12px;
+    text-align: center;
+  }
+  /* 内页导航 */
+  #path{
+    height: 39px;
+    border-bottom: 1px solid #1F87E8;
+    line-height: 39px;
+  }
+  #path>span{
+    display: inline-block;
+    color:#666;
+    font-size: 14px;
+  }
+  #path>a{
+    display: inline-block;
+    color: #333;
+    font-size: 14px;
+    color: #666;
+  }
+  #mainBody{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    height: 800px;
+  }
+  /* 左 */
+  #mainBody .bodyLeft {
+    width: 210px;
+    margin-right: 10px;
+    float: left;
+    height: 100%;
+  }
+  .bodyLeft h2{
+    width: 200px;
+    height: 50px;
+    line-height: 50px;
+    margin: 0 5px;
+    background: #076CE0;
+    color: #fff;
+    font-size: 16px;
+    text-align: center;
+    font-weight: 900;
+  }
+  .bodyLeft .choseCard{
+    height: 250px;
+    width: 200px;
+    opacity: 0.5;
+    margin: 5px;
+    margin-top: 0;
+  }
+  .bodyLeft .choseCard>ul{
+    height: 250px;
+  }
+  .bodyLeft .choseCard>ul li{
+    background: #ccc;
+    height: 40px;
+    line-height: 40px;
+    width: 200px;
+    border-bottom: 1px solid #fff;
+    text-align: center;
+    color:#444;
+    cursor: pointer;
+  }
+  .bodyLeft .choseCard>ul .choseActive{
+    background: #076CE0;
+    color: #fff;
+  }
+/* 右 */
+#mainBody .bodyRight {
+  width: 778px;
+  float: left;
+  height: 100%;
+  /* border:1px solid #83B6F0 ; */
+}
+.bodyRight h2{
+  width: 760px;
+  height: 50px;
+  line-height: 50px;
+  background: #076CE0;
+  color: #fff;
+  font-size: 16px;
+  padding-left: 20px;
+  opacity: 0.5;
+}
+.bodyRight .bodyCon{
+  width: 748px;
+  height: 730px;
+  padding: 0 15px;
+  border:1px solid #ccc ;
+  border-top: 0;
+}
+.bodyRight .bodyCon h3{
+  padding-top: 20px;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  width: 100%;
+}
+.bodyRight .bodyCon p{
+  margin-top: 10px;
+  width:100%;
+  text-indent: 2em;
+  font-size: 14px;
+  line-height: 18px;
+}

@@ -1,0 +1,396 @@
+header {
+  height: 80px;
+  padding: 5px;
+}
+header .header {
+  height: 80px;
+}
+header .header .logo {
+  display: block;
+  float: left;
+}
+header .header .logo img {
+  height: 80px;
+  width: 300px;
+}
+header .header .className {
+  display: block;
+  float: left;
+  padding-top: 16px;
+  height: 64px;
+}
+header .header .className img {
+  height: 64px;
+  width: 450px;
+}
+header .header .LogOrReg {
+  width: 200px;
+  float: left;
+  font-size: 14px;
+  padding-top: 56px;
+}
+header .header .LogOrReg a {
+  padding: 5px 10px;
+  display: block;
+  float: left;
+  cursor: pointer;
+  color: #076CE0;
+}
+header .header .LogOrReg #exit {
+  color: #076CE0;
+  cursor: pointer;
+}
+
+.banner img {
+  height: 260px;
+  width: 1000px;
+}
+
+#menu {
+  height: 50px;
+  background: #2097F3;
+}
+#menu .menu > li {
+  display: block;
+  float: left;
+  width: 120px;
+  height: 50px;
+  overflow: hidden;
+  border-right: 1px solid #2097F3;
+  position: relative;
+}
+#menu .menu > li a {
+  display: block;
+  padding: 0 10px;
+  width: 100px;
+  height: 50px;
+  line-height: 50px;
+  color: #fff;
+  font-size: 16px;
+  text-align: center;
+  cursor: pointer;
+}
+#menu .menu > li:hover {
+  background: #1F87E8;
+  overflow: visible;
+}
+#menu .menu > li > ul {
+  display: block;
+  position: absolute;
+  top: 50px;
+  left: 0;
+}
+#menu .menu > li > ul > li {
+  height: 50px;
+  background: #076CE0;
+  border-top: 1px solid #fff;
+}
+#menu .menu > li > ul > li a {
+  display: block;
+  padding: 0 10px;
+  width: 100px;
+  height: 50px;
+  line-height: 50px;
+  color: #fff;
+  font-size: 14px;
+  text-align: center;
+  cursor: pointer;
+}
+#menu .menu .menu-active {
+  background: #1F87E8;
+}
+
+#mainBody {
+  padding-top: 10px;
+  height: 750px;
+}
+#mainBody .bodyLeft {
+  width: 210px;
+  height: 750px;
+  padding: 0 10px 10px 0;
+  float: left;
+}
+#mainBody .bodyLeft .teacherShow > div {
+  width: 208px;
+  height: 180px;
+  border: 1px solid #ccc;
+  border-top: none;
+  overflow: hidden;
+  text-overflow: clip;
+}
+#mainBody .bodyLeft .teacherShow > div img {
+  float: left;
+  width: 86px;
+  height: 100px;
+  margin: 40px 5px;
+}
+#mainBody .bodyLeft .teacherShow > div p {
+  float: left;
+  width: 112px;
+  height: 178px;
+  font-size: 12px;
+  line-height: 16px;
+  color: #ccc;
+  text-indent: 2em;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 11;
+  overflow: hidden;
+}
+#mainBody .bodyLeft .studyCommunication {
+  margin-top: 10px;
+  height: 250px;
+  width: 208px;
+  border: 1px solid #ccc;
+  border-top: 0px;
+  background: #fff;
+}
+#mainBody .bodyLeft .studyCommunication .messageBox {
+  width: 188px;
+  padding: 0 10px;
+  height: 184px;
+  background: #fff;
+}
+#mainBody .bodyLeft .studyCommunication .messageBox ul li {
+  width: 178px;
+  height: 40px;
+  padding: 3px 5px;
+  line-height: 40px;
+  font-size: 14px;
+  color: #666;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+#mainBody .bodyLeft .studyCommunication .mbMore {
+  display: block;
+  float: right;
+  color: #076CE0;
+  font-size: 14px;
+}
+#mainBody .bodyLeft .adminLogin {
+  margin-top: 10px;
+  width: 208px;
+  height: 240px;
+  border: 1px solid #ccc;
+  border-top: none;
+}
+#mainBody .bodyLeft .adminLogin form {
+  display: block;
+  margin: 15px 5px;
+  width: 198px;
+  height: 230px;
+}
+#mainBody .bodyLeft .adminLogin form > div {
+  width: 180px;
+  height: 36px;
+  margin: 6px;
+  border: 1px solid #E9E9E9;
+}
+#mainBody .bodyLeft .adminLogin form > div > span {
+  display: block;
+  float: left;
+  background: #F7F7F7;
+  height: 36px;
+  width: 24px;
+  font-size: 16px;
+  line-height: 36px;
+  text-align: center;
+  color: #B5B5B5;
+}
+#mainBody .bodyLeft .adminLogin form > div > input {
+  display: block;
+  float: left;
+  background: #F7F7F7;
+  width: 150px;
+  height: 36px;
+  line-height: 36px;
+  color: #999;
+  padding: 0 3px;
+}
+#mainBody .bodyLeft .adminLogin form #loginBtn {
+  height: 40px;
+  width: 180px;
+  border: 1px solid #50A5EC;
+  color: #fff;
+  text-align: center;
+  line-height: 40px;
+  background: linear-gradient(#2FA6EF, #7ACFFF);
+  margin: 8px 0 0 8px;
+}
+#mainBody .bodyLeft .adminLogin form #register {
+  display: block;
+  height: 16px;
+  color: #666;
+  font-size: 12px;
+  line-height: 16px;
+  text-align: right;
+  margin: 15px 10px 0 0;
+}
+#mainBody .bodyLeft h3 {
+  width: 200px;
+  height: 45px;
+  line-height: 45px;
+  font-size: 16px;
+  color: #fff;
+  background: #076CE0;
+  padding-left: 10px;
+}
+#mainBody .bodyRight {
+  width: 780px;
+  height: 750px;
+  float: left;
+}
+#mainBody .bodyRight .classshow {
+  width: 780px;
+  height: 255px;
+}
+#mainBody .bodyRight .classshow img {
+  float: left;
+  width: 320px;
+  height: 180px;
+  margin: 15px 10px;
+}
+#mainBody .bodyRight .classshow p {
+  margin: 10px 5px;
+  float: left;
+  font-size: 14px;
+  width: 430px;
+  height: 200px;
+  line-height: 20px;
+  overflow: hidden;
+  text-indent: 2em;
+  color: #666;
+  letter-spacing: 1px;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 10;
+}
+#mainBody .bodyRight .teachResource {
+  margin-top: 10px;
+  width: 780px;
+  height: 255px;
+}
+#mainBody .bodyRight .teachResource div {
+  width: 780px;
+  height: 210px;
+}
+#mainBody .bodyRight .teachResource div ul {
+  width: 430px;
+  height: 200px;
+  padding: 5px;
+  float: left;
+}
+#mainBody .bodyRight .teachResource div ul li {
+  height: 40px;
+  padding: 5px 10px;
+  border-bottom: 1px dotted #ccc;
+}
+#mainBody .bodyRight .teachResource div ul li a {
+  display: block;
+  float: left;
+  width: 320px;
+  color: #999;
+  font-size: 14px;
+  height: 40px;
+  line-height: 40px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+#mainBody .bodyRight .teachResource div ul li span {
+  display: block;
+  width: 80px;
+  float: right;
+  color: #666;
+  font-size: 12px;
+  line-height: 40px;
+  height: 40px;
+  text-align: right;
+}
+#mainBody .bodyRight .teachResource div img {
+  float: left;
+  width: 320px;
+  height: 180px;
+  margin: 15px 10px;
+}
+#mainBody .bodyRight .classAlbum {
+  margin-top: 10px;
+  width: 780px;
+  height: 210px;
+}
+#mainBody .bodyRight h3 {
+  width: 775px;
+  height: 44px;
+  line-height: 44px;
+  font-size: 16px;
+  color: #000;
+  padding-left: 5px;
+  border-bottom: 1px solid #076CE0;
+}
+
+#classAlbum {
+  width: 770px;
+  padding: 5px 5px 0 5px;
+  height: 160px;
+}
+#classAlbum .swiper-container {
+  width: 100%;
+  height: 100%;
+}
+#classAlbum .swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  width: 25%;
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+#classAlbum .swiper-slide img {
+  width: 100%;
+  height: 100%;
+}
+
+footer {
+  height: 120px;
+}
+footer .footer {
+  height: 100px;
+  background: #2097F3;
+}
+footer .footer ul {
+  display: block;
+  padding: 20px;
+  height: 20px;
+  width: 200px;
+  margin: 0 auto;
+}
+footer .footer ul li {
+  float: left;
+}
+footer .footer ul li a {
+  color: #fff;
+  font-size: 12px;
+  height: 16px;
+  line-height: 16px;
+  padding: 2px 10px;
+}
+footer .footer p {
+  display: block;
+  color: #fff;
+  font-size: 12px;
+  text-align: center;
+}
+
+/*# sourceMappingURL=index.css.map */
